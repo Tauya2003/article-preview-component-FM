@@ -1,0 +1,129 @@
+// @import url('https://fonts.googleapis.com/css2?family=Manrope:wght@500;700&display=swap');
+@import './config';
+@import './responsive';
+
+body{
+    font-family: 'Manrope';
+    font-size: 0.8125rem;
+    font-weight: weight('regular');
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background-color: $light-Grayish-Blue;
+}
+
+
+.card{
+    border-radius: .75rem;
+    margin: 2rem 0;
+    background-color: #fff;
+
+    .left{
+        background-image: url('../images/drawers.jpg');
+        background-size: cover;
+        background-position: center;
+        min-height: 12rem;
+    }
+
+    .mid{
+        margin: 1rem 2.3rem;
+        
+        h1{
+            margin: 1rem 0;
+            color: $very-Dark-Grayish-Blue;
+            font-weight: weight('bold');
+        }
+
+        > p{
+            font-size: 0.8rem;
+            line-height: 1.5;
+            color: $desaturated-Dark-Blue;
+            margin-bottom: 1.5rem;
+            font-weight: weight('regular');
+        }
+    }
+
+    .bottom{
+        position: relative;
+        padding-bottom: .5rem;
+
+        .user{
+            display: grid;
+            grid-template-columns: 2.5rem 11rem 2rem;
+            margin: .5rem 2.3rem;
+            align-items: center;
+            justify-items: start;
+            
+
+            .avatar{
+                width: 2.5rem;
+                border-radius: 50%;
+            }
+
+            p{
+                display: grid;
+                grid-template-columns: 1fr;
+                grid-gap: 0.1rem;
+                margin-left: 1rem;
+                width: 100%;
+
+                .name{
+                    color: $very-Dark-Grayish-Blue;
+                    font-weight: weight('bold');
+                }
+
+                .date{
+                    color: $desaturated-Dark-Blue;
+                }
+            
+            }
+
+            button{
+                border: 0;
+                border-radius: 50%;
+                width: 2rem;
+                height: 2rem;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+            }
+
+        }
+
+        .overlay{
+            position: absolute;
+            padding: 0 2.3rem;
+            background-color: $very-Dark-Grayish-Blue;
+            min-height: 100%;
+            display: none; // grid to show
+            grid-template-columns: 4rem 8rem 1rem ;
+            grid-gap: 1rem;
+            justify-items: start;
+            align-items: center;
+            transition: all ease-in-out .5s;
+
+            span{
+                color: $grayish-Blue;
+                text-transform: uppercase;
+                letter-spacing: .25rem;
+            }
+
+            .social{
+                img{
+                    padding-right: .75rem;
+                }
+            }
+
+            button{
+                border: 0;
+                border-radius: 50%;
+                width: 2rem;
+                height: 2rem;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+            }
+        }
+    }
+}

@@ -1,0 +1,31 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+$very-Dark-Grayish-Blue: hsl(217, 19%, 35%);
+$desaturated-Dark-Blue: hsl(214, 17%, 51%);
+$grayish-Blue: hsl(212, 23%, 69%);
+$light-Grayish-Blue: hsl(210, 46%, 95%);
+$font-weights: (
+    'regular': 500,
+    'bold': 700,
+);
+
+@function weight($weight){
+    @return map-get($font-weights, $weight);
+}
+
+@mixin small {
+    @media  screen and (max-width: 1023px) {
+        @content;
+    }
+};
+
+@mixin large {
+    @media  screen and (min-width: 1024px) {
+        @content;
+    }
+};
+

@@ -1,0 +1,64 @@
+@include small{
+    h1{
+        font-size: 1.1rem;
+    }
+
+    .card{
+        overflow: hidden;
+        width: 25em;
+    }
+    .overlay{
+        width: 100%;
+        top: 0;
+    }
+}
+
+@include large{
+    .card{
+        display:grid;
+        grid-template-columns: 40% 60%;
+        width: 55.38em;
+    }
+
+    .left{
+        border-top-left-radius: .75rem;
+        border-bottom-left-radius: .75rem;
+    }
+
+    h1{
+        font-size: 1.3rem;
+    }
+
+    .right{
+        padding: 1rem 0;
+    }
+
+    button{
+        margin-left: 5rem;
+    }
+
+    .overlay{
+        border-radius: .5rem;
+        top: -150%;
+        width: 60%;
+        left: 52%;
+        position: relative;
+        box-shadow: .1rem .25rem 2rem lighten($very-Dark-Grayish-Blue, 50%);
+
+        button{opacity: 0;}
+
+        &::before{
+            content: '';
+            position: absolute;
+            width: 1rem;
+            height: 1rem;
+            background-color: $very-Dark-Grayish-Blue;
+            top: 85%;
+            left: 45%;
+            transform: rotate(-45deg) ;
+            box-shadow: -0.1rem .25rem 2rem lighten($very-Dark-Grayish-Blue, 50%);
+        }
+
+        
+    }
+}

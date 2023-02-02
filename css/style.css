@@ -1,0 +1,165 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+@media screen and (max-width: 1023px) {
+  h1 {
+    font-size: 1.1rem;
+  }
+  .card {
+    overflow: hidden;
+    width: 25em;
+  }
+  .overlay {
+    width: 100%;
+    top: 0;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .card {
+    display: grid;
+    grid-template-columns: 40% 60%;
+    width: 55.38em;
+  }
+  .left {
+    border-top-left-radius: 0.75rem;
+    border-bottom-left-radius: 0.75rem;
+  }
+  h1 {
+    font-size: 1.3rem;
+  }
+  .right {
+    padding: 1rem 0;
+  }
+  button {
+    margin-left: 5rem;
+  }
+  .overlay {
+    border-radius: 0.5rem;
+    top: -150%;
+    width: 60%;
+    left: 52%;
+    position: relative;
+    box-shadow: 0.1rem 0.25rem 2rem #d1d7e0;
+  }
+  .overlay button {
+    opacity: 0;
+  }
+  .overlay::before {
+    content: "";
+    position: absolute;
+    width: 1rem;
+    height: 1rem;
+    background-color: hsl(217deg, 19%, 35%);
+    top: 85%;
+    left: 45%;
+    transform: rotate(-45deg);
+    box-shadow: -0.1rem 0.25rem 2rem #d1d7e0;
+  }
+}
+body {
+  font-family: "Manrope";
+  font-size: 0.8125rem;
+  font-weight: 500;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  background-color: hsl(210deg, 46%, 95%);
+}
+
+.card {
+  border-radius: 0.75rem;
+  margin: 2rem 0;
+  background-color: #fff;
+}
+.card .left {
+  background-image: url("../images/drawers.jpg");
+  background-size: cover;
+  background-position: center;
+  min-height: 12rem;
+}
+.card .mid {
+  margin: 1rem 2.3rem;
+}
+.card .mid h1 {
+  margin: 1rem 0;
+  color: hsl(217deg, 19%, 35%);
+  font-weight: 700;
+}
+.card .mid > p {
+  font-size: 0.8rem;
+  line-height: 1.5;
+  color: hsl(214deg, 17%, 51%);
+  margin-bottom: 1.5rem;
+  font-weight: 500;
+}
+.card .bottom {
+  position: relative;
+  padding-bottom: 0.5rem;
+}
+.card .bottom .user {
+  display: grid;
+  grid-template-columns: 2.5rem 11rem 2rem;
+  margin: 0.5rem 2.3rem;
+  align-items: center;
+  justify-items: start;
+}
+.card .bottom .user .avatar {
+  width: 2.5rem;
+  border-radius: 50%;
+}
+.card .bottom .user p {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-gap: 0.1rem;
+  margin-left: 1rem;
+  width: 100%;
+}
+.card .bottom .user p .name {
+  color: hsl(217deg, 19%, 35%);
+  font-weight: 700;
+}
+.card .bottom .user p .date {
+  color: hsl(214deg, 17%, 51%);
+}
+.card .bottom .user button {
+  border: 0;
+  border-radius: 50%;
+  width: 2rem;
+  height: 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.card .bottom .overlay {
+  position: absolute;
+  padding: 0 2.3rem;
+  background-color: hsl(217deg, 19%, 35%);
+  min-height: 100%;
+  display: none;
+  grid-template-columns: 4rem 8rem 1rem;
+  grid-gap: 1rem;
+  justify-items: start;
+  align-items: center;
+  transition: all ease-in-out 0.5s;
+}
+.card .bottom .overlay span {
+  color: hsl(212deg, 23%, 69%);
+  text-transform: uppercase;
+  letter-spacing: 0.25rem;
+}
+.card .bottom .overlay .social img {
+  padding-right: 0.75rem;
+}
+.card .bottom .overlay button {
+  border: 0;
+  border-radius: 50%;
+  width: 2rem;
+  height: 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}/*# sourceMappingURL=style.css.map */
