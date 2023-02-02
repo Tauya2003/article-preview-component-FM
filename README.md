@@ -29,14 +29,14 @@ Users should be able to:
 
 ### Screenshot
 
-- ![Mobile](./screenshot.jpg)
-- ![Desktop](./screenshot.jpg)
+- ![Mobile](./images/mobile.png)
+- ![Desktop](./images/desktop.png)
 
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Solution URL: [https://github.com/Tauya2003/article-preview-component-FM](https://github.com/Tauya2003/article-preview-component-FM)
+- Live Site URL: [https://tauya2003.github.io/article-preview-component-FM](https://tauya2003.github.io/article-preview-component-FM/)
 
 ## My process
 
